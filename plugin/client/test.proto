@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package kokaze;
+
+service pluginService{
+
+    rpc cppCheck(Filename) returns (CppCheckContent) {}
+    rpc highLight(Filename) returns (TestCaseContent){}
+
+}
+
+
+message Filename{
+    string name = 1;
+}
+message TestCaseNumber{
+    int32 number = 1;
+}
+message TestCaseName{
+    string name = 1;
+}
+message TestCaseContent{
+    string title = 1;
+    repeated string content = 2;
+}
+message CppCheckContent{
+    string content = 1;
+    string output = 2;
+}
+

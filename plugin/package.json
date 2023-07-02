@@ -1,0 +1,66 @@
+{
+	"name": "plugin",
+	"displayName": "plugin",
+	"description": "a homework",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.69.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:c",
+		"onLanguage:cpp"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "plugin.useCppCheck",
+				"title": "Use CppCheck"
+			},
+			{
+				"command": "plugin.highLight",
+				"title": "HighLight CppCheck Result"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"when": "resourceLangId == c ||  resourceLangId == cpp",
+					"command": "plugin.useCppCheck",
+					"group": "navigation@1"
+				},
+				{
+					"when": "resourceLangId == c ||  resourceLangId == cpp",
+					"command": "plugin.highLight",
+					"group": "navigation@2"
+				}
+			],
+			"explorer/context": [
+				{
+					"when": "resourceLangId == c || resourceLangId == cpp || explorerResourceIsFolder",
+					"command": "plugin.useCppCheck",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.69.0",
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.1",
+		"@types/node": "16.x",
+		"eslint": "^8.18.0",
+		"glob": "^8.0.3",
+		"mocha": "^10.0.0",
+		"typescript": "^4.7.4",
+		"@vscode/test-electron": "^2.1.5"
+	}
+}
