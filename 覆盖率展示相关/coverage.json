@@ -1,0 +1,207 @@
+{
+ "FileName": "/home/extend/FDSE/vscode-plugin/example-basic/basic_01.c",
+ "FunctionName": "foo1",
+ "TestCases": [
+  {
+   "TestCaseName": "test_case_0",
+   "FileName": "fdse_test_2.test",
+   "LinesExecPer": "55.56%",
+   "BranchExecPer": "66.67%",
+   "ExecOncePer": "33.33%",
+   "linesInfo": [
+    {
+     "count": 1,
+     "line_number": 1
+    },
+    {
+     "branches": [
+      1,
+      0
+     ],
+     "count": 1,
+     "line_number": 2
+    },
+    {
+     "branches": [
+      0,
+      1
+     ],
+     "count": 1,
+     "line_number": 3
+    },
+    {
+     "count": 1,
+     "line_number": 6
+    },
+    {
+     "count": 1,
+     "line_number": 15
+    }
+   ]
+  },
+  {
+   "TestCaseName": "test_case_1",
+   "FileName": "fdse_test_3.test",
+   "LinesExecPer": "55.56%",
+   "BranchExecPer": "66.67%",
+   "ExecOncePer": "33.33%",
+   "linesInfo": [
+    {
+     "count": 1,
+     "line_number": 1
+    },
+    {
+     "branches": [
+      0,
+      1
+     ],
+     "count": 1,
+     "line_number": 2
+    },
+    {
+     "branches": [
+      1,
+      0
+     ],
+     "count": 1,
+     "line_number": 9
+    },
+    {
+     "count": 1,
+     "line_number": 10
+    },
+    {
+     "count": 1,
+     "line_number": 15
+    }
+   ]
+  },
+  {
+   "TestCaseName": "test_case_2",
+   "FileName": "fdse_test_0.test",
+   "LinesExecPer": "55.56%",
+   "BranchExecPer": "66.67%",
+   "ExecOncePer": "33.33%",
+   "linesInfo": [
+    {
+     "count": 1,
+     "line_number": 1
+    },
+    {
+     "branches": [
+      1,
+      0
+     ],
+     "count": 1,
+     "line_number": 2
+    },
+    {
+     "branches": [
+      1,
+      0
+     ],
+     "count": 1,
+     "line_number": 3
+    },
+    {
+     "count": 1,
+     "line_number": 4
+    },
+    {
+     "count": 1,
+     "line_number": 15
+    }
+   ]
+  },
+  {
+   "TestCaseName": "test_case_3",
+   "FileName": "fdse_test_1.test",
+   "LinesExecPer": "55.56%",
+   "BranchExecPer": "66.67%",
+   "ExecOncePer": "33.33%",
+   "linesInfo": [
+    {
+     "count": 1,
+     "line_number": 1
+    },
+    {
+     "branches": [
+      0,
+      1
+     ],
+     "count": 1,
+     "line_number": 2
+    },
+    {
+     "branches": [
+      0,
+      1
+     ],
+     "count": 1,
+     "line_number": 9
+    },
+    {
+     "count": 1,
+     "line_number": 12
+    },
+    {
+     "count": 1,
+     "line_number": 15
+    }
+   ]
+  }
+ ],
+ "LinesExecPer": "100.00%",
+ "BranchExecPer": "100.00%",
+ "ExecOncePer": "100.00%",
+ "LinesInfo": [
+  {
+   "count": 4,
+   "line_number": 1
+  },
+  {
+   "branches": [
+    1,
+    1
+   ],
+   "count": 4,
+   "line_number": 2
+  },
+  {
+   "branches": [
+    1,
+    1
+   ],
+   "count": 2,
+   "line_number": 3
+  },
+  {
+   "count": 1,
+   "line_number": 4
+  },
+  {
+   "count": 1,
+   "line_number": 6
+  },
+  {
+   "branches": [
+    1,
+    1
+   ],
+   "count": 2,
+   "line_number": 9
+  },
+  {
+   "count": 1,
+   "line_number": 10
+  },
+  {
+   "count": 1,
+   "line_number": 12
+  },
+  {
+   "count": 4,
+   "line_number": 15
+  }
+ ]
+}

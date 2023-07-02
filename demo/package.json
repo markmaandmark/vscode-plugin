@@ -1,0 +1,68 @@
+{
+  "name": "demo",
+  "displayName": "demo",
+  "description": "demo",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.66.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:demo.activateExtension"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "demo.activateExtension",
+        "title": "Activate Extension"
+      },
+      {
+        "command": "demo.generateTestCases",
+        "title": "Generate Test Cases"
+      },
+      {
+        "command": "demo.showTestCase",
+        "title": "Show Test Case"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorFocus && resourceLangId == c",
+          "command": "demo.generateTestCases",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "demo.showTestCase",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.66.0",
+    "@vscode/test-electron": "^2.1.3",
+    "eslint": "^8.11.0",
+    "glob": "^7.2.0",
+    "mocha": "^9.2.2",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.6.5",
+    "async": "^3.2.3",
+    "lodash": "^4.17.21"
+  }
+}

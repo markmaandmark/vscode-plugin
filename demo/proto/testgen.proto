@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package testgen;
+
+service TestCaseGeneration {
+    rpc kleeGeneration(FileName) returns (TestCaseNumber) {}
+    rpc kleeShow(TestCaseName) returns (TestCaseContent) {}
+}
+
+message FileName {
+    string name = 1;
+}
+
+message TestCaseNumber {
+    int32 number = 1;
+}
+
+message TestCaseName {
+    string name = 1;
+}
+
+message TestCaseContent {
+    string content = 1;
+}
